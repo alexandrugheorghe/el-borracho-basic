@@ -13,7 +13,6 @@ class ElBorrachoBasic extends Skeleton
 
   constructor: (@options = {}) ->
     @redis           or= @options.redis or Redis.createClient()
-    # @eredis          or= Redis.createClient()
     @options.address or= "0.0.0.0"
     @options.api      ?= true
     @options.stats    ?= true
