@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+console.log("starting el-borracho-basic")
+
+ElBorracho = require("../el-borracho-basic")
+options = process.argv[1] ? require(process.argv[1]) : {}
+elBorracho = new ElBorracho(options)
+elBorracho.listen()

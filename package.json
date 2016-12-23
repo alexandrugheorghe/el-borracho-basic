@@ -1,0 +1,47 @@
+{
+  "name": "el-borracho-basic",
+  "version": "1.0.0",
+  "description": "All El Borracho libs combined in a meta-package with zero-config server",
+  "bin": {
+    "el-borracho": "./bin/el-borracho"
+  },
+  "main": "./el-borracho-basic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "iced --bare --map --runtime node -o ./ -c src/",
+    "watch": "iced --watch --bare --map --runtime node -o ./ -c src/",
+    "start": "el-borracho"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nextorigin/el-borracho-basic.git"
+  },
+  "keywords": [
+    "borracho",
+    "job",
+    "queue",
+    "bull",
+    "ui",
+    "api",
+    "stats",
+    "sidekiq",
+    "worker",
+    "redis",
+    "distributed",
+    "atomic"
+  ],
+  "author": "doublerebel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nextorigin/el-borracho-basic/issues"
+  },
+  "homepage": "https://github.com/nextorigin/el-borracho-basic#readme",
+  "dependencies": {
+    "el-borracho": "^2.2.0",
+    "el-borracho-stats": "^1.0.1",
+    "el-borracho-ui": "^1.2.4",
+    "errify": "^1.0.0",
+    "nextorigin-express-skeleton": "^0.16.0",
+    "source-map-support": "^0.4.7"
+  }
+}
