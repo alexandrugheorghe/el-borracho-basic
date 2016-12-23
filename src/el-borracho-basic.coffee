@@ -3,6 +3,7 @@ Redis    = require "ioredis"
 path     = require "path"
 errify   = require "errify"
 Skeleton = require "nextorigin-express-skeleton"
+Queue    = require "bull"
 Borracho = require "el-borracho/router"
 Stats    = require "el-borracho-stats/router"
 root     = require "el-borracho-ui/asset-path"
@@ -37,7 +38,8 @@ class ElBorrachoBasic extends Skeleton
 
     await store.queueNames ideally defer names
     for name in names
-      stats = new Stats queue: {name, client: @redis}
+      queue = new Queue name, redis: opts: createClient: => @redis
+      stats = new Worker {queue}
       @stats[name] = stats
 
     callback()
