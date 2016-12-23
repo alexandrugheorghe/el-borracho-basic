@@ -15,11 +15,32 @@ npm install --save el-borracho-basic
 `npm bin`/el-borracho
 ```
 
+## Configuration
+
+Create a JSON or JS file containing or exporting a config object, and pass the path as the first argument to el-borracho.
+
+#### config.json (defaults)
+```json
+{
+  "address": "0.0.0.0",
+  "api": true,
+  "stats": true,
+  "ui": true
+}
+```
+
+*All other options are passed through to [nextorigin-express-skeleton][nextorigin-express-skeleton].*
+
+```sh
+`npm bin`/el-borracho ./config.json
+```
+
 ## License
 
 MIT
 
   [elborrachojs]:  https://elborrachojs.com
+  [nextorigin-express-skeleton]:  https://github.com/nextorigin/express-skeleton
 
   [dependency]: https://img.shields.io/david/nextorigin/el-borracho-basic.svg?style=flat-square
   [david]: https://david-dm.org/nextorigin/el-borracho-basic
