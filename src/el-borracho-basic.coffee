@@ -1,6 +1,5 @@
 require "source-map-support/register"
 Redis    = require "ioredis"
-path     = require "path"
 errify   = require "errify"
 Skeleton = require "nextorigin-express-skeleton"
 Queue    = require "bull"
