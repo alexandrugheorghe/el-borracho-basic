@@ -39,9 +39,9 @@
   "dependencies": {
     "el-borracho": "^2.3.0",
     "el-borracho-stats": "^2.0.0",
-    "el-borracho-ui": "^1.2.4",
+    "el-borracho-ui": "^1.3.1",
     "errify": "^1.0.0",
-    "nextorigin-express-skeleton": "^0.16.0",
-    "source-map-support": "^0.4.7"
+    "nextorigin-express-skeleton": "^0.16.1",
+    "source-map-support": "^0.4.17"
   }
 }
