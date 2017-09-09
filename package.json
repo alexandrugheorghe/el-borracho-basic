@@ -1,6 +1,6 @@
 {
   "name": "el-borracho-basic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "One-line zero-config ElBorrachoJS UI+API+Stats metapackage",
   "bin": {
     "el-borracho": "./bin/el-borracho"
