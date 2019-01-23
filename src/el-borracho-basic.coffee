@@ -12,7 +12,7 @@ class ElBorrachoBasic extends Skeleton
   logPrefix: "(El Borracho)"
 
   constructor: (@options = {}) ->
-    @redis           or= @options.redis or Redis.createClient()
+    @redis            ?= Redis.createClient({ port: '6379', host: 'localhost' })
     @options.address or= "0.0.0.0"
     @options.api      ?= true
     @options.stats    ?= true
